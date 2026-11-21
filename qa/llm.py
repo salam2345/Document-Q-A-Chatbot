@@ -21,7 +21,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 DEFAULT_BASE_URL = "https://api.groq.com/openai/v1"
-DEFAULT_MODEL = "llama-3.3-70b-versatile"
+DEFAULT_MODEL = "openai/gpt-oss-120b"
 
 
 class LLMClient:
@@ -53,6 +53,14 @@ class LLMClient:
                 )
                 return (response.choices[0].message.content or "").strip()
             except Exception as error:  # noqa: BLE001 - show any provider error to the user
+                status = getattr(error, "status_code", None)
+                if status in (400, 401, 403, 404):
+                    # Retrying won't fix a wrong key or model name, so stop with a clear hint.
+                    raise RuntimeError(
+                        f"The LLM provider rejected the request ({status}): {error}\n"
+                        f"Model used: {self.model}. Run `python list_models.py` to see the models "
+                        "your key can use, then set LLM_MODEL in your .env file."
+                    ) from None
                 if attempt == retries - 1:
                     raise
                 wait = 2 ** (attempt + 1)

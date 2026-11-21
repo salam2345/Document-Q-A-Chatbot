@@ -48,7 +48,7 @@ Run `python evaluate.py --config both` and paste the table it prints here.
 
 ## Run it in GitHub Codespaces
 
-1. **Get a free API key.** Sign up at [Groq](https://console.groq.com/keys) and create an API key. (Any OpenAI-compatible provider works; see `.env.example` for Google Gemini.)
+1. **Get a free API key.** Sign up at [Groq](https://console.groq.com/keys) and create an API key. (Any OpenAI-compatible provider works; see `.env.example` for Google Gemini.) The default model is `openai/gpt-oss-120b`. Providers retire models over time, so if you get a "model does not exist" error, run `python list_models.py` and set `LLM_MODEL` in `.env`.
 2. **Add the key as a Codespaces secret.** On GitHub, go to Settings → Codespaces → Secrets → New secret. Name it `LLM_API_KEY`, paste the key, and give it access to this repository. Alternatively, copy `.env.example` to `.env` inside the Codespace and paste the key there. `.env` is git-ignored, so the key never gets committed.
 3. **Open the Codespace.** Click the badge above (or Code → Codespaces → Create codespace). Dependencies install automatically.
 4. **Run it:**
@@ -56,6 +56,7 @@ Run `python evaluate.py --config both` and paste the table it prints here.
 ```bash
 pytest                                  # unit tests (no API key needed)
 python evaluate.py --config both --provider mock   # offline dry run of the evaluation
+python list_models.py                   # check which models your key can use
 python chat.py                          # chat in the terminal
 streamlit run app.py                    # web interface (opens in a browser tab)
 python evaluate.py --config both        # real evaluation with the LLM (takes ~2 minutes)
