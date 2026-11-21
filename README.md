@@ -4,7 +4,7 @@ A Python chatbot that answers customer questions about a grocery delivery app (K
 
 It uses **retrieval-augmented generation (RAG)**: instead of trusting the model's memory, it finds the most relevant parts of the documents and gives them to an LLM along with the question.
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/salam2345/doc-qa-chatbot)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/salam2345/Document-Q-A-Chatbot)
 
 ## How it works
 
