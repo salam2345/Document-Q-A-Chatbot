@@ -1,0 +1,25 @@
+{"id": 1, "question": "How much is the delivery fee in Kamloops?", "expected_keywords": ["4.99"], "source": "delivery.md", "answerable": true}
+{"id": 2, "question": "What order total gets free delivery in Nairobi?", "expected_keywords": ["3000"], "source": "delivery.md", "answerable": true}
+{"id": 3, "question": "Which cities does Kikapu deliver to?", "expected_keywords": ["kamloops", "nairobi"], "source": "delivery.md", "answerable": true}
+{"id": 4, "question": "What is the latest time I can order and still get same-day delivery?", "expected_keywords": ["2:00|2 p.m.|2pm|2 pm"], "source": "delivery.md", "answerable": true}
+{"id": 5, "question": "How long does the driver wait if I'm not home?", "expected_keywords": ["10 minutes"], "source": "delivery.md", "answerable": true}
+{"id": 6, "question": "How much does it cost to reschedule a missed delivery in Kamloops?", "expected_keywords": ["$3|3 dollars"], "source": "delivery.md", "answerable": true}
+{"id": 7, "question": "For Kikapu Plus members in Kamloops, what order amount qualifies for free delivery?", "expected_keywords": ["25"], "source": "delivery.md", "answerable": true}
+{"id": 8, "question": "What is the minimum order amount in Nairobi?", "expected_keywords": ["500"], "source": "orders_and_payments.md", "answerable": true}
+{"id": 9, "question": "Can I pay with M-Pesa in Kenya?", "expected_keywords": ["m-pesa", "yes|accept|accepted"], "source": "orders_and_payments.md", "answerable": true}
+{"id": 10, "question": "Is cash on delivery accepted?", "expected_keywords": ["no|not"], "source": "orders_and_payments.md", "answerable": true}
+{"id": 11, "question": "Until which order status can I cancel an order for free?", "expected_keywords": ["received"], "source": "orders_and_payments.md", "answerable": true}
+{"id": 12, "question": "If a substitute item costs more than the original, do I pay the higher price?", "expected_keywords": ["no|never|not"], "source": "orders_and_payments.md", "answerable": true}
+{"id": 13, "question": "How many promo codes can I use on a single order?", "expected_keywords": ["one|1|single"], "source": "orders_and_payments.md", "answerable": true}
+{"id": 14, "question": "How long do I have to report a damaged item?", "expected_keywords": ["48 hours"], "source": "returns_and_refunds.md", "answerable": true}
+{"id": 15, "question": "How long does a refund to my card take?", "expected_keywords": ["5", "7"], "source": "returns_and_refunds.md", "answerable": true}
+{"id": 16, "question": "Within how many days can I return unopened non-perishable items?", "expected_keywords": ["14 days"], "source": "returns_and_refunds.md", "answerable": true}
+{"id": 17, "question": "Can I return fresh produce I changed my mind about?", "expected_keywords": ["no|cannot|can't|not"], "source": "returns_and_refunds.md", "answerable": true}
+{"id": 18, "question": "How long is a password reset link valid?", "expected_keywords": ["30 minutes"], "source": "accounts_and_app.md", "answerable": true}
+{"id": 19, "question": "How much does Kikapu Plus cost per month in Canada?", "expected_keywords": ["9.99"], "source": "accounts_and_app.md", "answerable": true}
+{"id": 20, "question": "What percentage of my order do Kikapu Plus members get back as credit?", "expected_keywords": ["5%"], "source": "accounts_and_app.md", "answerable": true}
+{"id": 21, "question": "What are the support chat hours?", "expected_keywords": ["7:00|7 a.m.|7am|7 am", "10:00|10 p.m.|10pm|10 pm"], "source": "accounts_and_app.md", "answerable": true}
+{"id": 22, "question": "What is the minimum Android version the app supports?", "expected_keywords": ["android 9"], "source": "accounts_and_app.md", "answerable": true}
+{"id": 23, "question": "Who is the CEO of Kikapu?", "expected_keywords": [], "source": null, "answerable": false}
+{"id": 24, "question": "Does Kikapu sell alcohol?", "expected_keywords": [], "source": null, "answerable": false}
+{"id": 25, "question": "What is Kikapu's customer support phone number?", "expected_keywords": [], "source": null, "answerable": false}
