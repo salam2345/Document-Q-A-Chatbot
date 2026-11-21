@@ -43,8 +43,8 @@ Run `python evaluate.py --config both` and paste the table it prints here.
 
 | Config | Model | Accuracy | Correct | Retrieval hit rate | Refusal accuracy |
 | --- | --- | --- | --- | --- | --- |
-| baseline | | | | | |
-| improved | | | | | |
+| baseline | openai/gpt-oss-120b | 48% | 12/25 | 86% | 0% |
+| improved | openai/gpt-oss-120b | 76% | 19/25 | 100% | 100% |
 
 ## Run it in GitHub Codespaces
 
